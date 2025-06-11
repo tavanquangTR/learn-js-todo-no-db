@@ -29,6 +29,7 @@ const createIncompleteTodo = (todo) =>{
                 completedUl.removeChild(backBtn.closest("li"))
         });
         completeItem.appendChild(backBtn)
+        completeItem.className="list-row"
         incompleteUl.removeChild(completeItem);
         completedUl.appendChild(completeItem);
 
